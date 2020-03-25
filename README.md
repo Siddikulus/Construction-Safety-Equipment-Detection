@@ -4,7 +4,7 @@ Objects such as *Safety Helmets*, *Safety Vests* are detected along with a *Pers
 The project works by adding 2 new classes i.e Safety Helmets and Safety Vests onto the coco dataset which is already trained for the Person class.
 The training set was evenly distributed among all the 3 classes, with there being around 730 annotations for each class.
 
-**How Do I use a pre-trained class and train new classes on it?**
+**How Do I use a pre-trained class and further train new classes?**
 
 The images in your custom dataset should be annotated for all the classes to be detected. Using ```self.add_class(source_name, class_id, class_name)``` the classes are added. Make sure ```NUM_CLASSES = 1 + 3``` is set based upon the total classes to be detected (Background+Total Classes)
 
